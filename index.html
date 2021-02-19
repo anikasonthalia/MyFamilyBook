@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Family Book</title>
+        <style>
+            h1{
+                font-size: 50px;
+            }
+            body{
+                background-color: aqua;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            My Family Book
+        </h1>
+        <p>
+            Here are a few members in my family.
+        </p>
+        <img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrluQxiXvQbb1yUl2VZHtZ5y_drP0loa36eg&usqp=CAU">
+        <div>
+            <button type="button" onclick="nextslide()">Next</button>
+        </div>
+        <p id="p3">I am Anika Sonthalia. I love being myself. I love art, reading and coding! I love my parents they give me insperation!</p>
+    </body>
+</html>
+<script>
+    var family=[
+        "This my mom, Surabhi Rungta I love her a lot she is special to me.",
+        "This is my dad, Rahul Sonthalia I love him as well he loves to code like me his job it to code.(That is where I got the idea to start coding!)"];
+    
+    var images=[
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61A9J6AwwRsGhLDPcX8S29jwV1lJJ0rZv9g&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-gY2WNoxUOhd2s2E2CkQfVFLu1AhQmAYuw&usqp=CAU"
+    ];
+    var i=0;
+function nextslide(){
+document.getElementById("p3").innerHTML=family[i];
+document.getElementById("image1").src=images[i];
+i++;
+}
+</script>
